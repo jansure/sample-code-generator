@@ -41,7 +41,10 @@ type GuestbookStatus struct {
 	// Important: Run "make" to regenerate code after modifying this file
 }
 
+// +genclient
 // +kubebuilder:object:root=true
+
+// +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // Guestbook is the Schema for the guestbooks API
 type Guestbook struct {
